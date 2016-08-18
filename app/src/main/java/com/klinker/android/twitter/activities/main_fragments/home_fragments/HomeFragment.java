@@ -176,7 +176,9 @@ public class HomeFragment extends MainFragment { // implements LoaderManager.Loa
                 } else {
                     liveUnread++;
                     sharedPrefs.edit().putBoolean("refresh_me", false).commit();
-                    if (liveUnread != 0) {
+                    //Do not show "New Tweet" toasts if user changed its settings
+                    //Settings > UI Settings > Other Options > Use "New Tweet" Toast
+                    if (liveUnread != 0 && settings.newTweetToast) {
                         try {
                             showToastBar(liveUnread + " " + (liveUnread == 1 ? getResources().getString(R.string.new_tweet) : getResources().getString(R.string.new_tweets)),
                                     getResources().getString(R.string.view),

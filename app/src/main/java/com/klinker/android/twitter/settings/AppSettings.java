@@ -130,6 +130,7 @@ public class AppSettings {
     public boolean showBoth;
     public boolean absoluteDate;
     public boolean useToast;
+    public boolean newTweetToast;
     public boolean autoInsertHashtags;
     public boolean alwaysCompose;
     public boolean twitlonger;
@@ -260,6 +261,7 @@ public class AppSettings {
         followersNot = sharedPrefs.getBoolean("follower_notifications", true);
         absoluteDate = sharedPrefs.getBoolean("absolute_date", false);
         useToast = sharedPrefs.getBoolean("use_toast", true);
+        newTweetToast = sharedPrefs.getBoolean("new_tweet_toast", true);
         autoInsertHashtags = sharedPrefs.getBoolean("auto_insert_hashtags", false);
         alwaysCompose = sharedPrefs.getBoolean("always_compose", false);
         twitlonger = sharedPrefs.getBoolean("twitlonger", true);
@@ -543,6 +545,7 @@ public class AppSettings {
         followersNot = sharedPrefs.getBoolean("follower_notifications", true);
         absoluteDate = sharedPrefs.getBoolean("absolute_date", false);
         useToast = sharedPrefs.getBoolean("use_toast", true);
+        newTweetToast = sharedPrefs.getBoolean("new_tweet_toast", true);
         autoInsertHashtags = sharedPrefs.getBoolean("auto_insert_hashtags", false);
         alwaysCompose = sharedPrefs.getBoolean("always_compose", false);
         twitlonger = sharedPrefs.getBoolean("twitlonger", true);

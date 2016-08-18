@@ -124,6 +124,13 @@
             />
 
         <CheckBoxPreference
+            android:key="new_tweet_toast"
+            android:title="@string/new_tweet_toast"
+            android:defaultValue="true"
+            android:dependency="ui_extras"
+            />
+
+        <CheckBoxPreference
             android:key="floating_compose"
             android:title="@string/floating_compose"
             android:defaultValue="true"
